@@ -29,8 +29,7 @@ a {
   padding: 0 10px;
 }
 
-h1, h2
-p {
+h1, h2, p {
   margin: 0;
 }
 
@@ -42,3 +41,4 @@ p {
   border: none;
   margin: 0 auto;
 }
+
