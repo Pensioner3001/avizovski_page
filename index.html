@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" href="assets/favicon.png" type="image.png" />
-    <link rel="stylesheet" href="index.css" />
+      rel="stylesheet"/>
+    <link rel="icon" href="assets/favicon.png" type="image.png"/>
+    <link rel="stylesheet" href="index.css"/>
     <title>Aivazovski</title>
   </head>
 
@@ -26,25 +25,65 @@
               <a href="#about-id" class="nav-link" aria-label="link to about">About</a>
             </li>
             <li>
-              <a href="#history-id" class="nav-link" aria-label="link to history"
-                >History</a
-              >
+              <a href="#history-id"class="nav-link"aria-label="link to history">History</a>
             </li>
             <li>
-              <a href="#portfolio-id" class="nav-link" aria-label="link to portfolio"
-                >Portfolio</a
-              >
+              <a href="#portfolio-id"class="nav-link"aria-label="link to portfolio">Portfolio</a>
             </li>
             <li>
-              <a href="#contacts=id" class="nav-link" aria-label="link to contacts"
-                >Contacts</a
-              >
+              <a href="#contacts-id"class="nav-link"aria-label="link to contacts">Contacts</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
 
+    <div class="mobile-navigation" aria-label="mobile navigation">
+
+      <label for="toggler-id" aria-label="open-close mobile navigation menu">
+
+        <svg class="mobile-navigation-burger" aria-label="burger icon" width="33" height="20" viewBox="0 0 33 20" fill="none"  
+          id="burger-icon" xmlns="http://www.w3.org/2000/svg">
+          <rect width="33" height="3.83721" fill="black"/>
+          <rect y="7.67383" width="33" height="3.83721" fill="black"/>
+          <rect y="15.3496" width="33" height="3.83721" fill="black"/>
+        </svg>
+
+      </label>
+
+      <input type="checkbox" id="toggler-id" class="mobile-navigation-toggler"/>
+
+      <nav class="mobile-navigation-menu" aria-label="mob header-navigation">
+
+        <ul class="mobile-navigation-list" aria-label="mob header navigation list">
+          <li>
+            <a href="#home-id" class="mobile-navigation-link" aria-label="link to home">Home</a>
+          </li>
+          <li>
+            <a href="#about-id" class="mobile-navigation-link" aria-label="link to about">About</a>
+          </li>
+          <li>
+            <a href="#history-id"class="mobile-navigation-link"aria-label="link to history">History</a>
+          </li>
+          <li>
+            <a href="#portfolio-id"class="mobile-navigation-link"aria-label="link to portfolio">Portfolio</a>
+          </li>
+          <li>
+            <a href="#contacts-id"class="mobile-navigation-link"aria-label="link to contacts">Contacts</a>
+          </li>
+        </ul>
+
+        <label for="toggler-id" class="mobile-navigation-close" aria-label="open-close mobile navigation menu">
+          <svg class="mobile-navigation-cross" aria-label="cross icon" width="23" height="23" 
+               fill="none" id="cross-icon" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2.68701" width="27.3715" height="3.8" transform="rotate(45 2.68701 0)" fill="#828282"/>
+              <rect x="0.831055" y="19.5566" width="27.3715" height="3.8" transform="rotate(-45 0.831055 19.5566)" fill="#828282"/>
+          </svg>
+        </label>
+
+      </nav>
+      
+    </div>
     <main aria-label="main">
       <section class="home" aria-label="home-section" id="home-id">
         <div class="container">
@@ -54,11 +93,7 @@
           <p class="home-description" aria-label="home-description">
             Russian marine painter of Armenian origin, collector, philanthropist
           </p>
-          <img
-            src="assets/webp/home.webp"
-            alt="photo of Aivazovski"
-            class="home-image"
-          />
+          <img src="assets/webp/home.webp"alt="photo of Aivazovski"class="home-image"/>
         </div>
       </section>
 
@@ -102,8 +137,7 @@
           <img
             src="assets/webp/history.webp"
             alt="history-photo"
-            class="history-img"
-          />
+            class="history-img"/>
 
           <p class="history-description" aria-label="house of aivazovsky">
             Дом в котором родился Айвазовский | The house where Aivazovsky was
@@ -111,49 +145,66 @@
           </p>
         </div>
       </section>
-      <section class="portfolio" aria-label="portfolio section" id="portfolio-id">
-        <div class="container">
-            <h2 class="portfolio-title" aria-label="portfolio-title">Portfolio</h2>
-            <img src="assets/webp/portfolio1.webp" alt="Winter wagon train on the way" class="portfolio-picture">
-            <p class="portfolio-description" aria-label="picture 1 description">Зимний обоз в пути, 1857 г. | Winter wagon train on the way, 1857</p>
+      <section class="portfolio"aria-label="portfolio section"id="portfolio-id">
 
-            <img src="assets/webp/portfolio2.webp" alt="Rainbow" class="portfolio-picture">
-            <p class="portfolio-description" aria-label="picture 2 description">Радуга, 1873 г. | Rainbow, 1873</p>
-            
-            <img src="assets/webp/portfolio3.webp" alt="Gulf of Naples in the morning" class="portfolio-picture">
-            <p class="portfolio-description" aria-label="picture 3 description">Неаполитанский залив утром, 1893 г. | Gulf of Naples in the morning, 1893</p>
+        <div class="container">
+          <h2 class="portfolio-title" aria-label="portfolio-title">Portfolio</h2>
+
+          <img src="assets/webp/portfolio1.webp"alt="Winter wagon train on the way" class="portfolio-picture"/>
+
+          <p class="portfolio-description" aria-label="picture 1 description">
+            Зимний обоз в пути, 1857 г. | Winter wagon train on the way, 1857
+          </p>
+
+          <img src="assets/webp/portfolio2.webp"alt="Rainbow"class="portfolio-picture"/>
+          <p class="portfolio-description" aria-label="picture 2 description">
+            Радуга, 1873 г. | Rainbow, 1873
+          </p>
+
+          <img src="assets/webp/portfolio3.webp"alt="Gulf of Naples in the morning"class="portfolio-picture"/>
+
+          <p class="portfolio-description" aria-label="picture 3 description">
+            Неаполитанский залив утром, 1893 г. | Gulf of Naples in the morning,
+            1893
+          </p>
         </div>
       </section>
     </main>
-    <footer class="contacts" aria-label="contacts-section" id="contacts=id">
+    <footer class="contacts" aria-label="contacts-section" id="contacts-id">
       <div class="container">
         <h2 class="contacts-title">Contacts</h2>
-        
-          <a href="https://en.wikipedia.org/wiki/Ivan_Aivazovsky" class="button-link" target="_blank">Ivan_Aivazovsky</a>
-        
+
+        <a href="https://en.wikipedia.org/wiki/Ivan_Aivazovsky"class="button-link"target="_blank">Ivan_Aivazovsky</a>
+
         <address class="socials" aria-label="social-icons">
-          <a href="https://www.youtube.com/" target="_blank" aria-label="link to youtube">
+
+          <a href="https://www.youtube.com/"target="_blank"aria-label="link to youtube">
             <svg class="social-icon" aria-label="youtube-icon">
               <use href="assets/spites.svg#youtube-icon"></use>
             </svg>
           </a>
-          <a href="https://linkedin.com" target="_blank" aria-label="link to linked">
+
+          <a href="https://linkedin.com"target="_blank"aria-label="link to linked">
             <svg class="social-icon" aria-label="linkedin-icon">
               <use href="assets/spites.svg#linkedin-icon"></use>
             </svg>
           </a>
-          <a href="https://instagram.com" target="_blank" aria-label="link to instagram">
+
+          <a href="https://instagram.com"target="_blank"aria-label="link to instagram">
             <svg class="social-icon" aria-label="instagram-icon">
               <use href="assets/spites.svg#instagram-icon"></use>
             </svg>
           </a>
-          <a href="https://facebook.com" target="_blank" aria-label="link to facebook">
+
+          <a href="https://facebook.com"target="_blank"aria-label="link to facebook">
             <svg class="social-icon" aria-label="facebook-icon">
               <use href="assets/spites.svg#facebook-icon"></use>
             </svg>
           </a>
         </address>
-        <p class="contacts-info" arial-label="just for notice">More works you can see in these social networks</p>
+        <p class="contacts-info" arial-label="just for notice">
+          More works you can see in these social networks
+        </p>
       </div>
     </footer>
   </body>

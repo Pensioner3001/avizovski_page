@@ -1,9 +1,9 @@
 :root {
-    --bg--main:#fff;
-    
-    --bg--main--grey: #fff;
+  --bg--main: #fff;
 
-    --font-color-grey: #544545;
+  --bg--main--grey: #F6F6F6;
 
-    --color-main-black: #070707;
+  --font-color-grey: #544545;
+
+  --color-main-black: #070707;
 }
